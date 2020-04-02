@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PM.exe" version="1.0.0.3" publicKeyToken="5e19df24226a821c" language="en" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Picture1.ico" asmv2:publisher="Muhammad Jamil" co.v1:suiteName="Jamilsoft_Dynamics" asmv2:product="Password Manager" asmv2:supportUrl="http://jamilsoft-bot.github.io/" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PM" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PM.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PM Library.dll" size="8192">
+      <assemblyIdentity name="PM Library" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dgrYPUX5D0ibOG+DJdQu5r1kTLrw5YNLNqXM3LST4cA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PM.exe" size="4639208">
+      <assemblyIdentity name="PM" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3m6K5DK0IAWozMooNZxglQwMycN6nnimMVD1mm8AD5Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PMComponents.dll" size="12288">
+      <assemblyIdentity name="PMComponents" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vNSQF2mNbvOecxms0+20jg9HXXdbeKuuSiWMyC41s7k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Passwords.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h4pwBUZbfBDWgPIyPcjG7J+RE1+t3lK7M8rLvV3UyUA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Passwords_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eHvKonnsyDopMZx3UFblOeFcEs88vq4Fol5fAqIHkY8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Picture1.ico" size="9662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AtxzsMz3aEbLPlS2bF1vtfbOSOjgQ4JwlWxY0ggQwdo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PM.exe.config" size="578">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1hfy7zOaYtrGqVSULgjsqPI4RTLL6+elPBACuU9gRkQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=JAMILSOFT-PC\Jamilsoft" issuerKeyHash="0298d44f7e835ccfc6aff473454ce67ce0a6bb2f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HMhIU15Fx4lEV2hFxYh4tddopNdtjlS6IPHi5Yw67Jo=</DigestValue></Reference></SignedInfo><SignatureValue>CqS2g0bgqHleEHR9++vZx36/veATZYxae6zJgmnvKxgPfbfjgcRloBaCmS5h6NtJgneBP8Lo1yL+RKh2hMjtBTVUSlaKj3s1BueccXBxOCeolQ3JKHsuyAqXpOyOsGbuJQhqJx/vdv4OoRcMiJdJ7rJfu5K1a1efzikzyZ13IqI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ykShxKOpt4QDUp1pmiCqS8Bxk+ho3MzvpqqJicqJii2HBFF/K1k5YaDdr99uzWnjDvNqweQYI1NTuMQbQnT6qnpPh259Rp2JGhUu5uQ+Zun4+rrFp8epzBmhaxuPKXjkfd5Cf+ZQNl7m+CpnVEo5FRxqy5Wsz05U2A2sZS6joZU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9aec3a8ce5e2f120ba548e6dd7a468d7b57888c54568574489c7455e5348c81c" Description="" Url=""><as:assemblyIdentity name="PM.exe" version="1.0.0.3" publicKeyToken="5e19df24226a821c" language="en" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JAMILSOFT-PC\Jamilsoft</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>nI1pZXYnbczDw4Dq2bHLZ4tB44p4SOzpfW9oRpvMycM=</DigestValue></Reference></SignedInfo><SignatureValue>eh88O5FihKgm+ZwF+J+tg2GjAFFIsJ+d8j3TZZ3QVf+ppPB8IY0pHQHG/3iVqDFNbfmMMhgk1i1/oHBHUEqa+Toat7O0TxQ+MnBqSIoT+wSXjyy8fdJkI9MFZUTBKcqS7Q5Q/0Qm8ICsFZ1YGHLL3GSExVL3x9btWLeNpoUM6Q4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ykShxKOpt4QDUp1pmiCqS8Bxk+ho3MzvpqqJicqJii2HBFF/K1k5YaDdr99uzWnjDvNqweQYI1NTuMQbQnT6qnpPh259Rp2JGhUu5uQ+Zun4+rrFp8epzBmhaxuPKXjkfd5Cf+ZQNl7m+CpnVEo5FRxqy5Wsz05U2A2sZS6joZU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQHVjRvf/GdLlAnWMVeSNvRzANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwASgBBAE0ASQBMAFMATwBGAFQALQBQAEMAXABKAGEAbQBpAGwAcwBvAGYAdDAeFw0yMDAzMjUxNDU1NTlaFw0yMTAzMjUyMDU1NTlaMDcxNTAzBgNVBAMeLABKAEEATQBJAEwAUwBPAEYAVAAtAFAAQwBcAEoAYQBtAGkAbABzAG8AZgB0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDKRKHEo6m3hANSnWmaIKpLwHGT6GjczO+mqomJyomKLYcEUX8rWTlhoN2v327NaeMO82rB5BgjU1O4xBtCdPqqek+Hbn1GnYkaFS7m5D5m6fj6usWnx6nMGaFrG48peOR93kJ/5lA2Xub4KmdUSjkVHGrLlazPTlTYDaxlLqOhlQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAGn4oSVZYrQeZaeaOAuAiKCNHEtiB7HCGEjO2t7HrzsNJSLH3oAPmmyL6iTRCkGpYnZaxn4fZ9yT0x4D8j+5Mfwnf5WOBliymZg8MlKTIrFMeowLrTpHUGs+hL+AUGZA5PS2oD0nSRYjsqZMhhfrwJMvDNKrXPOM8glzzYhPTcrG</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
